@@ -7,7 +7,9 @@
 //
 
 import Foundation
+import UIKit
 
 internal protocol PageMenuLayout {
     func layoutMenuItems(withTitles titles: [String]) -> [PageMenuItem]
+    func countSize(for menuItems: [PageMenuItem]) -> CGSize
 }

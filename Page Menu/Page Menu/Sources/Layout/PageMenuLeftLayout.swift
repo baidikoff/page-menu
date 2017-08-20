@@ -1,5 +1,5 @@
 //
-//  PageMenuCenterLayout.swift
+//  PageMenuLeftLayout.swift
 //  Page Menu
 //
 //  Created by Nick Baidikoff on 8/20/17.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-internal class PageMenuCenterLayout: PageMenuLayout {
+internal class PageMenuLeftLayout: PageMenuLayout {
     func countSize(for menuItems: [PageMenuItem]) -> CGSize {
         return .zero
     }

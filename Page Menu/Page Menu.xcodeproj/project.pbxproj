@@ -22,6 +22,10 @@
 		A8F583671F498ACC00ECB602 /* PageMenuContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F583661F498ACC00ECB602 /* PageMenuContainer.swift */; };
 		A8F583691F498B0400ECB602 /* PageMenuSelectionIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F583681F498B0400ECB602 /* PageMenuSelectionIndicator.swift */; };
 		A8F5836B1F498FBE00ECB602 /* PageMenuCenterLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5836A1F498FBE00ECB602 /* PageMenuCenterLayout.swift */; };
+		A8F5836D1F49921600ECB602 /* PageMenuLeftLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5836C1F49921600ECB602 /* PageMenuLeftLayout.swift */; };
+		A8F5836F1F49923900ECB602 /* PageMenuRightLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5836E1F49923900ECB602 /* PageMenuRightLayout.swift */; };
+		A8F583711F49926400ECB602 /* PageMenuFlexibleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F583701F49926400ECB602 /* PageMenuFlexibleLayout.swift */; };
+		A8F583731F4994BD00ECB602 /* PageMenuControllersContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F583721F4994BD00ECB602 /* PageMenuControllersContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,10 @@
 		A8F583661F498ACC00ECB602 /* PageMenuContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageMenuContainer.swift; sourceTree = "<group>"; };
 		A8F583681F498B0400ECB602 /* PageMenuSelectionIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageMenuSelectionIndicator.swift; sourceTree = "<group>"; };
 		A8F5836A1F498FBE00ECB602 /* PageMenuCenterLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageMenuCenterLayout.swift; sourceTree = "<group>"; };
+		A8F5836C1F49921600ECB602 /* PageMenuLeftLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageMenuLeftLayout.swift; sourceTree = "<group>"; };
+		A8F5836E1F49923900ECB602 /* PageMenuRightLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageMenuRightLayout.swift; sourceTree = "<group>"; };
+		A8F583701F49926400ECB602 /* PageMenuFlexibleLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageMenuFlexibleLayout.swift; sourceTree = "<group>"; };
+		A8F583721F4994BD00ECB602 /* PageMenuControllersContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageMenuControllersContainer.swift; sourceTree = "<group>"; };
 		BF93E71B66397D1B1FEB747F /* Pods_Page_MenuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Page_MenuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE993F1A78C43269D27AD519 /* Pods-Page Menu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Page Menu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Page Menu/Pods-Page Menu.debug.xcconfig"; sourceTree = "<group>"; };
 		E0A602E3203903CBB1D56F71 /* Pods-Page MenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Page MenuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Page MenuTests/Pods-Page MenuTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +182,9 @@
 			children = (
 				A8F5835F1F49813000ECB602 /* PageMenuLayout.swift */,
 				A8F5836A1F498FBE00ECB602 /* PageMenuCenterLayout.swift */,
+				A8F5836C1F49921600ECB602 /* PageMenuLeftLayout.swift */,
+				A8F5836E1F49923900ECB602 /* PageMenuRightLayout.swift */,
+				A8F583701F49926400ECB602 /* PageMenuFlexibleLayout.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -184,6 +195,7 @@
 				A8F583641F498ABA00ECB602 /* PageMenuItem.swift */,
 				A8F583661F498ACC00ECB602 /* PageMenuContainer.swift */,
 				A8F583681F498B0400ECB602 /* PageMenuSelectionIndicator.swift */,
+				A8F583721F4994BD00ECB602 /* PageMenuControllersContainer.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -397,12 +409,16 @@
 			files = (
 				A8F5836B1F498FBE00ECB602 /* PageMenuCenterLayout.swift in Sources */,
 				A8F583691F498B0400ECB602 /* PageMenuSelectionIndicator.swift in Sources */,
+				A8F5836F1F49923900ECB602 /* PageMenuRightLayout.swift in Sources */,
+				A8F583711F49926400ECB602 /* PageMenuFlexibleLayout.swift in Sources */,
 				A8F5835B1F4980B900ECB602 /* PageMenuOptions.swift in Sources */,
 				A8F5835E1F4980B900ECB602 /* PageMenuDelegate.swift in Sources */,
 				A8F583601F49813000ECB602 /* PageMenuLayout.swift in Sources */,
+				A8F5836D1F49921600ECB602 /* PageMenuLeftLayout.swift in Sources */,
 				A8F583651F498ABA00ECB602 /* PageMenuItem.swift in Sources */,
 				A8F583621F4981A700ECB602 /* PageMenuDataSource.swift in Sources */,
 				A8F5835D1F4980B900ECB602 /* PageMenu.swift in Sources */,
+				A8F583731F4994BD00ECB602 /* PageMenuControllersContainer.swift in Sources */,
 				A8F5835A1F4980B900ECB602 /* PageMenuAppearance.swift in Sources */,
 				A8F583671F498ACC00ECB602 /* PageMenuContainer.swift in Sources */,
 			);

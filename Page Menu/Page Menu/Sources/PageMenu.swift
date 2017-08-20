@@ -39,16 +39,39 @@ public class PageMenu: UIViewController {
     
     // MARK: - Private 
     private func layoutMenu() {
-        guard let dataSource = self.dataSource else {
-            return
+        let (controllers, titles) = self.getControllersAndTitles()
+        
+        let layout: PageMenuLayout
+        switch self.appearance.layoutType {
+        case .center: layout = PageMenuCenterLayout()
+        case .left: layout = PageMenuLeftLayout()
+        case .right: layout = PageMenuRightLayout()
+        case .flexible: layout = PageMenuFlexibleLayout()
         }
         
-        let controllerCount = dataSource.numberOfControllers(in: self)
+        let menuItems = layout.layoutMenuItems(withTitles: titles)
+        let size = layout.countSize(for: menuItems)
+        self.menu = PageMenuContainer(menuItems: menuItems, frame: CGRect(origin: .zero, size: size))
+    }
     
-        var controllers = [UIViewController]()
-        for index in 0..<controllerCount {
-            let controller = dataSource.pageMenu(self, controllerForIndex: index)
-            controllers.append(controller)
+    private func getControllersAndTitles() -> ([UIViewController], [String]) {
+        guard let dataSource = self.dataSource else {
+            return ([], [])
         }
+
+        let count = dataSource.numberOfControllers(in: self)
+        
+        var controllers = [UIViewController]()
+        var titles = [String]()
+        
+        for index in 0..<count {
+            let controller = dataSource.pageMenu(self, controllerForIndex: index)
+            let title = dataSource.pageMenu(self, titleForController: controller, at: index)
+            
+            controllers.append(controller)
+            titles.append(title)
+        }
+
+        return (controllers, titles)
     }
 }
