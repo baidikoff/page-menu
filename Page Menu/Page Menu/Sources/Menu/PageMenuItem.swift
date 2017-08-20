@@ -1,5 +1,5 @@
 //
-//  PageMenuLayout.swift
+//  PageMenuItem.swift
 //  Page Menu
 //
 //  Created by Nick Baidikoff on 8/20/17.
@@ -7,7 +7,8 @@
 //
 
 import Foundation
+import UIKit
 
-internal protocol PageMenuLayout {
-    func layoutMenuItems(withTitles titles: [String]) -> [PageMenuItem]
+internal class PageMenuItem: UIView {
+
 }

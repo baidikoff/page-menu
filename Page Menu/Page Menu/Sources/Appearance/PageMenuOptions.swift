@@ -9,6 +9,14 @@
 import Foundation
 import UIKit
 
-public enum PageMenuOptions: OptionSet {
+public enum PageMenuOptions {
 
+    case layoutType(PageMenuLayoutType)
+}
+
+public enum PageMenuLayoutType {
+    case center
+    case left
+    case right
+    case flexible
 }

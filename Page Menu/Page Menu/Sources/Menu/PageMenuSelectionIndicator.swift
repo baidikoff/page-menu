@@ -1,5 +1,5 @@
 //
-//  PageMenuItem.swift
+//  PageMenuSelectionIndicator.swift
 //  Page Menu
 //
 //  Created by Nick Baidikoff on 8/20/17.
@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-class PageMenuItem: UIView {
+internal class PageMenuSelectionIndicator: UIView {
 
 }
