@@ -11,7 +11,14 @@
 		42ED3A25B6AA92CE83BBE7EB /* Pods_Page_Menu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D8955DF2FC359BEA1245A2 /* Pods_Page_Menu.framework */; };
 		A8F582DE1F49763D00ECB602 /* .framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F582D41F49763D00ECB602 /* .framework */; };
 		A8F582E31F49763D00ECB602 /* Page_MenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F582E21F49763D00ECB602 /* Page_MenuTests.swift */; };
-		A8F582E51F49763D00ECB602 /* Page Menu.h in Headers */ = {isa = PBXBuildFile; fileRef = A8F582D71F49763D00ECB602 /* Page Menu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8F583581F4980B900ECB602 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8F5834D1F4980B900ECB602 /* Info.plist */; };
+		A8F583591F4980B900ECB602 /* Page Menu.h in Headers */ = {isa = PBXBuildFile; fileRef = A8F5834E1F4980B900ECB602 /* Page Menu.h */; };
+		A8F5835A1F4980B900ECB602 /* PageMenuAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F583511F4980B900ECB602 /* PageMenuAppearance.swift */; };
+		A8F5835B1F4980B900ECB602 /* PageMenuOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F583521F4980B900ECB602 /* PageMenuOptions.swift */; };
+		A8F5835C1F4980B900ECB602 /* PageMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F583551F4980B900ECB602 /* PageMenuItem.swift */; };
+		A8F5835D1F4980B900ECB602 /* PageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F583561F4980B900ECB602 /* PageMenu.swift */; };
+		A8F5835E1F4980B900ECB602 /* PageMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F583571F4980B900ECB602 /* PageMenuDelegate.swift */; };
+		A8F583601F49813000ECB602 /* PageMenuLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F5835F1F49813000ECB602 /* PageMenuLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,11 +36,17 @@
 		82D8955DF2FC359BEA1245A2 /* Pods_Page_Menu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Page_Menu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A8D27AD7EACB727C1E0C87 /* Pods-Page MenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Page MenuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Page MenuTests/Pods-Page MenuTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A8F582D41F49763D00ECB602 /* .framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = .framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8F582D71F49763D00ECB602 /* Page Menu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Page Menu.h"; sourceTree = "<group>"; };
-		A8F582D81F49763D00ECB602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8F582DD1F49763D00ECB602 /* Page MenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Page MenuTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F582E21F49763D00ECB602 /* Page_MenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page_MenuTests.swift; sourceTree = "<group>"; };
 		A8F582E41F49763D00ECB602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8F5834D1F4980B900ECB602 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8F5834E1F4980B900ECB602 /* Page Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Page Menu.h"; sourceTree = "<group>"; };
+		A8F583511F4980B900ECB602 /* PageMenuAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageMenuAppearance.swift; sourceTree = "<group>"; };
+		A8F583521F4980B900ECB602 /* PageMenuOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageMenuOptions.swift; sourceTree = "<group>"; };
+		A8F583551F4980B900ECB602 /* PageMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageMenuItem.swift; sourceTree = "<group>"; };
+		A8F583561F4980B900ECB602 /* PageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageMenu.swift; sourceTree = "<group>"; };
+		A8F583571F4980B900ECB602 /* PageMenuDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageMenuDelegate.swift; sourceTree = "<group>"; };
+		A8F5835F1F49813000ECB602 /* PageMenuLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageMenuLayout.swift; sourceTree = "<group>"; };
 		BF93E71B66397D1B1FEB747F /* Pods_Page_MenuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Page_MenuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE993F1A78C43269D27AD519 /* Pods-Page Menu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Page Menu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Page Menu/Pods-Page Menu.debug.xcconfig"; sourceTree = "<group>"; };
 		E0A602E3203903CBB1D56F71 /* Pods-Page MenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Page MenuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Page MenuTests/Pods-Page MenuTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,8 +116,8 @@
 		A8F582D61F49763D00ECB602 /* Page Menu */ = {
 			isa = PBXGroup;
 			children = (
-				A8F582D71F49763D00ECB602 /* Page Menu.h */,
-				A8F582D81F49763D00ECB602 /* Info.plist */,
+				A8F5834C1F4980B900ECB602 /* Resources */,
+				A8F5834F1F4980B900ECB602 /* Sources */,
 			);
 			path = "Page Menu";
 			sourceTree = "<group>";
@@ -118,6 +131,52 @@
 			path = "Page MenuTests";
 			sourceTree = "<group>";
 		};
+		A8F5834C1F4980B900ECB602 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8F5834D1F4980B900ECB602 /* Info.plist */,
+				A8F5834E1F4980B900ECB602 /* Page Menu.h */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A8F5834F1F4980B900ECB602 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A8F583501F4980B900ECB602 /* Appearance */,
+				A8F583531F4980B900ECB602 /* Layout */,
+				A8F583541F4980B900ECB602 /* Menu Item */,
+				A8F583561F4980B900ECB602 /* PageMenu.swift */,
+				A8F583571F4980B900ECB602 /* PageMenuDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A8F583501F4980B900ECB602 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				A8F583511F4980B900ECB602 /* PageMenuAppearance.swift */,
+				A8F583521F4980B900ECB602 /* PageMenuOptions.swift */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		A8F583531F4980B900ECB602 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				A8F5835F1F49813000ECB602 /* PageMenuLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		A8F583541F4980B900ECB602 /* Menu Item */ = {
+			isa = PBXGroup;
+			children = (
+				A8F583551F4980B900ECB602 /* PageMenuItem.swift */,
+			);
+			path = "Menu Item";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -125,7 +184,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8F582E51F49763D00ECB602 /* Page Menu.h in Headers */,
+				A8F583591F4980B900ECB602 /* Page Menu.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +245,7 @@
 					A8F582D31F49763D00ECB602 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 76LJ97E96C;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					A8F582DC1F49763D00ECB602 = {
@@ -218,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F583581F4980B900ECB602 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +385,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F5835B1F4980B900ECB602 /* PageMenuOptions.swift in Sources */,
+				A8F5835C1F4980B900ECB602 /* PageMenuItem.swift in Sources */,
+				A8F5835E1F4980B900ECB602 /* PageMenuDelegate.swift in Sources */,
+				A8F583601F49813000ECB602 /* PageMenuLayout.swift in Sources */,
+				A8F5835D1F4980B900ECB602 /* PageMenu.swift in Sources */,
+				A8F5835A1F4980B900ECB602 /* PageMenuAppearance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,17 +518,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DE993F1A78C43269D27AD519 /* Pods-Page Menu.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 76LJ97E96C;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Page Menu/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Page Menu/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.baidikoff.Page-Menu";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -470,13 +539,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5365833153A276F6FB9A458C /* Pods-Page Menu.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 76LJ97E96C;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Page Menu/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Page Menu/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.baidikoff.Page-Menu";
@@ -489,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84A8D27AD7EACB727C1E0C87 /* Pods-Page MenuTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 76LJ97E96C;
 				INFOPLIST_FILE = "Page MenuTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -502,6 +573,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E0A602E3203903CBB1D56F71 /* Pods-Page MenuTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 76LJ97E96C;
 				INFOPLIST_FILE = "Page MenuTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
