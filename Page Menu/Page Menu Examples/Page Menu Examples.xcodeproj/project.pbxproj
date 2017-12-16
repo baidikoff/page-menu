@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A861FA371FD6B1F900E65A81 /* Page_Menu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A861FA381FD6B1F900E65A81 /* Page_Menu.framework */; };
 		A8F582FB1F49768200ECB602 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F582FA1F49768200ECB602 /* AppDelegate.swift */; };
 		A8F582FD1F49768200ECB602 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F582FC1F49768200ECB602 /* ViewController.swift */; };
 		A8F583001F49768200ECB602 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F582FE1F49768200ECB602 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A861FA381FD6B1F900E65A81 /* Page_Menu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Page_Menu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F582F71F49768200ECB602 /* Page Menu Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Page Menu Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F582FA1F49768200ECB602 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8F582FC1F49768200ECB602 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A861FA371FD6B1F900E65A81 /* Page_Menu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +133,7 @@
 		A8F583341F4976AE00ECB602 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A861FA381FD6B1F900E65A81 /* Page_Menu.framework */,
 				A8F583351F4976AE00ECB602 /* Page Menu.framework */,
 			);
 			name = Frameworks;
@@ -204,17 +208,20 @@
 					A8F582F61F49768200ECB602 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 76LJ97E96C;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					A8F5830A1F49768200ECB602 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 76LJ97E96C;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						TestTargetID = A8F582F61F49768200ECB602;
 					};
 					A8F583151F49768200ECB602 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 76LJ97E96C;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						TestTargetID = A8F582F61F49768200ECB602;
 					};
@@ -430,7 +437,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.baidikoff.Page-Menu-Examples";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -443,7 +451,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.baidikoff.Page-Menu-Examples";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -457,7 +466,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.baidikoff.Page-Menu-ExamplesTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Page Menu Examples.app/Page Menu Examples";
 			};
 			name = Debug;
@@ -472,7 +482,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.baidikoff.Page-Menu-ExamplesTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Page Menu Examples.app/Page Menu Examples";
 			};
 			name = Release;
@@ -486,7 +497,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.baidikoff.Page-Menu-ExamplesUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "Page Menu Examples";
 			};
 			name = Debug;
@@ -500,7 +512,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.baidikoff.Page-Menu-ExamplesUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "Page Menu Examples";
 			};
 			name = Release;

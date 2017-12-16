@@ -9,13 +9,15 @@
 import Foundation
 import UIKit
 
-class PageMenuControllersContainer: UIScrollView {
+internal class PageMenuControllersContainer: UIScrollView {
 
     private let controllers: [UIViewController]
     
     init(controllers: [UIViewController], frame: CGRect) {
         self.controllers = controllers
         super.init(frame: frame)
+        
+        self.controllers.forEach { self.addSubview($0.view) }
     }
     
     required init?(coder aDecoder: NSCoder) {

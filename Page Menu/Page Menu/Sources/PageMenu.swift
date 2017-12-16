@@ -17,8 +17,14 @@ public class PageMenu: UIViewController {
     
     // MARK: - Private properties
     private let appearance: PageMenuAppearance
-    private var menu: PageMenuContainer = PageMenuContainer()
+    private var menu = PageMenuContainer()
+    private var controllersContainer = PageMenuControllersContainer(controllers: [], frame: .zero)
     private var selectionIndicator: PageMenuSelectionIndicator = PageMenuSelectionIndicator()
+    
+    // MARK: - Public
+    public func reloadTabs() {
+        self.layoutMenu()
+    }
     
     // MARK: - Object lifecycle
     public init(frame: CGRect, options: [PageMenuOptions]) {
@@ -37,21 +43,33 @@ public class PageMenu: UIViewController {
         self.layoutMenu()
     }
     
+    public override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.layoutMenu()
+    }
+    
     // MARK: - Private 
     private func layoutMenu() {
+        self.view.subviews.forEach { $0.removeFromSuperview() }
+        
         let (controllers, titles) = self.getControllersAndTitles()
         
-        let layout: PageMenuLayout
-        switch self.appearance.layoutType {
-        case .center: layout = PageMenuCenterLayout()
-        case .left: layout = PageMenuLeftLayout()
-        case .right: layout = PageMenuRightLayout()
-        case .flexible: layout = PageMenuFlexibleLayout()
-        }
+        let layout = self.appearance.layoutType.layout
+        let menuItems = layout.layoutMenuItems(withTitles: titles, appearance: self.appearance)
+        let size = layout.countSize(for: menuItems, appearance: self.appearance)
         
-        let menuItems = layout.layoutMenuItems(withTitles: titles)
-        let size = layout.countSize(for: menuItems)
         self.menu = PageMenuContainer(menuItems: menuItems, frame: CGRect(origin: .zero, size: size))
+        
+        let controllersFrame = CGRect(x: self.view.x,
+                                      y: self.view.y + self.menu.height,
+                                      width: self.view.width,
+                                      height: self.view.height - self.menu.height)
+        
+        self.controllersContainer = PageMenuControllersContainer(controllers: controllers, frame: controllersFrame)
+        
+        self.view.addSubview(self.menu)
+        self.view.addSubview(self.controllersContainer)
+        self.view.layoutIfNeeded()
     }
     
     private func getControllersAndTitles() -> ([UIViewController], [String]) {

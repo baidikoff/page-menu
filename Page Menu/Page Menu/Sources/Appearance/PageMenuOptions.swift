@@ -10,13 +10,16 @@ import Foundation
 import UIKit
 
 public enum PageMenuOptions {
-
     case layoutType(PageMenuLayoutType)
+    case itemsSpacing(CGFloat)
 }
 
 public enum PageMenuLayoutType {
-    case center
     case left
-    case right
-    case flexible
+    
+    var layout: PageMenuLayout {
+        switch self {
+        case .left: return PageMenuLeftLayout()
+        }
+    }
 }

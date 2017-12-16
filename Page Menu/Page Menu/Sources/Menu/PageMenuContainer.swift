@@ -15,6 +15,7 @@ internal class PageMenuContainer: UIScrollView {
     init(menuItems: [PageMenuItem], frame: CGRect) {
         self.menuItems = menuItems
         super.init(frame: frame)
+        self.menuItems.forEach { self.addSubview($0) }
     }
     
     convenience init() {
